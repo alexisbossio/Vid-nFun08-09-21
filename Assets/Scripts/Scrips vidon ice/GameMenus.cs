@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMenus : MonoBehaviour {
 	public GameObject mainUI;
@@ -37,7 +38,8 @@ public class GameMenus : MonoBehaviour {
 	}
 	public void exitTheGame() {
 		buttonSound.Play ();
-		Application.Quit ();
+		//Application.Quit ();
+		
 	}
 	private void reset() {
 		GameObject.Find ("Main Camera").transform.position = new Vector3(0, 0, -10);
