@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class cambioxtrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collision.gameObject.tag=="Player")
+        {
+            GetComponent<cambioesena>().CambioDeNivel(cambioesena.Levels.Pinball);
+        }
     }
 }
