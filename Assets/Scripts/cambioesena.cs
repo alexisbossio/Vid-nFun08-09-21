@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class cambioesena : MonoBehaviour
 {
-    public enum Levels { Puerta = 0, Pinball = 1, Vidonjump = 2 }
+    public enum Levels { Puerta = 0, Pinball = 1, Vidonjump = 2 ,Galeria = 3}
     public void CambioDeNivel(Levels level)
     {
        SceneManager.LoadScene((int)level); 
